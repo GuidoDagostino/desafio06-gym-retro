@@ -1,0 +1,157 @@
+/* 3D3B8E -> Marian blue */
+/* 6883BA -> Glaucos */
+/* #F9F9F9 -> Seasalt */
+/* #E072A4 -> Thulian Pink */
+/* #B0E298 -> Celadon */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3D3B8E; /* Marian blue */
+  color: #6883BA; /* Glaucos */
+  margin: 0;
+}
+
+.menu-principal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #B0E298;
+}
+
+.titulo{
+  font-size: 100px;
+}
+
+.menu-principal .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.navbar {
+  background-color: #6883BA; /* Glaucos */
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #3D3B8E; /* Marian blue */
+  color: #F9F9F9; /* Seasalt */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.carousel {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F9F9F9; /* Seasalt */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.modal form {
+  width: 100%;
+}
+
+.modal form input[type="text"],
+.modal form input[type="number"],
+.modal form select,
+.modal form textarea {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6883BA; /* Glaucos */
+  color: #F9F9F9; /* Seasalt */
+  cursor: pointer;
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.carousel-img.hidden {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 100%;
+    width: auto;
+  }
+}
